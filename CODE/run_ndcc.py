@@ -52,7 +52,7 @@ myDevice = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
 myModel = myModel.to(myDevice)
 
 #Initialize ndcfc class
-ns_ndcfc = Ndcfc(input_data_size, train_batch_size, myModel, myDevice, train_dataset, learning_rate)
+ns_ndcfc = NSCC(input_data_size, train_batch_size, myModel, myDevice, train_dataset, learning_rate)
 
 #Assign noise
 noise_index = ns_ndcfc.assign_noise(noise_type, noise_rate)
@@ -63,27 +63,3 @@ data_sample = ns_ndcfc.train_ns_prepare(num_training_epoch, dataset_name)
 
 cf_correct, cf_wrong = ns_ndcfc.training(1)
 
-# for i in range(input_data_size):
-#     data, label = train_dataset[i]
-#     data_input.append(data)
-#     target.append(label)
-
-# data_value_test = train_dataset.data
-# target_test = train_dataset.targets
-# data_sample_test = data_value_test[:input_data_size, :, :, :]
-# target_sample_test = target_test[:input_data_size]
-
-
-# #Sample data
-# num_batch_iter = int(input_data_size/train_batch_size)
-# num_data = num_batch_iter * train_batch_size
-# classes = list(set(target))
-# data_sample =  np.zeros(shape = (num_data, 3,224,224), dtype = float)
-# for z in range(num_data):
-#     data_sample[z] = data_input[z]
-
-#Load pretrained model
-
-
-#Adding initial noisy label
-# change_label_index_initial, ori_label_initial, ns_label_initial, y_train_ns = assign_nosie(input_data_size*noise_rate, target, num_data)
