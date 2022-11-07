@@ -1,2 +1,5 @@
-readme
+README:
+Ndcfc.py: Main class of noisy detection and label correction.
+run_ndcfc.py: Main file to run the Ndcfc method.
+functionn.py: File contrains multiple independent functions that are needed in both Ndcdc.py and run_ndcfc.py.
 
