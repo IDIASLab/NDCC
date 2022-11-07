@@ -193,28 +193,7 @@ class Ndcfc():
             cf_label, count, cf_true_correct_list, cf_false_correct_list, y_train_ns_next,  ns_index_for_next, ns_label_for_next , update_ori_for_next, loss_value_noise, cf_mis_ns = cf_search_correct_label(cf_correct_data, ns_data_index, self.noisy_index, self.ori_label, self.ns_label, self.myDevice, self.y)
             
             return cf_true_correct_list, cf_false_correct_list
-            # print("The number of cf correction successful rate is {}".format(correct_rate))
-            # print("The number of wrong detection cf correction successful rate is {}".format(wrong_detect_correct_rate))
-           
-             # y_train_ns_updated = label_updated(y_train_ns, ns_data_index, cf_correct_label)
-           #  # change_data_index_updated, ori_label_value_updated = noisy_number_modify(change_data_index, ori_label_value, wrong_detect, miss_detect, true_detect,  ns_data_index, cf_correct_label, cf_correct_list, cf_wrong_detect_correct_list)
-           #  # print("The number noise data for next iteration {}".format(len(change_data_index_updated)))
-            
-           #  self.myModel.train()
-           #  loss_value = loss_value_clean + loss_value_noise.to(self.myDevice)/500
-           #  print(loss_value)
-           #  # myOptimzier_ns.zero_grad()
-           #  # loss_value.backward()
-           #  # myOptimzier_ns.step()
-           #  # torch.save(myModel, 'Resnet34_cf_test_{}.pkl'.format(epoch)) # 保存整个模型  
-            
-           # #Parameter updates for next iteration:
-           #  train_y_input = y_train_ns_next
-           #  ori_label_value = update_ori_for_next
-           #  change_data_index = ns_index_for_next
-           #  ns_label  = ns_label_for_next
-           #  # ns_data, ns_label = ns_data_update(data_sample, change_data_index, y_train_ns)
-           #  # ns_data_index =  ns_index_for_next
+         
           
 
     
