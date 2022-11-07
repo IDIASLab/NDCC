@@ -26,7 +26,7 @@ class RESNET_MF(nn.Module):
         self.o2 =model(self.x)
         return self.o2, self.x    
     
-class Ndcfc():
+class NDCC():
     def __init__(self, input_data_size, train_batch_size, myModel, myDevice, train_dataset, learning_rate):
         self.train_dataset = train_dataset
         self.size = input_data_size
