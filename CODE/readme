@@ -1,6 +1,6 @@
 README:
-Ndcfc.py: Main class of noisy detection and label correction.
-run_ndcfc.py: Main file to run the Ndcfc method.
-functionn.py: File contrains multiple independent functions that are needed in both Ndcdc.py and run_ndcfc.py.
+Ndcc.py: Main class of noisy detection and label correction.
+run_ndcc.py: Main file to run the Ndcc method.
+functionn.py: File contrains multiple independent functions that are needed in both Ndcdc.py and run_ndcc.py.
 acc_testing.py: Test the trained learning model with reporting accuracy.
 
