@@ -2,6 +2,24 @@
 
 We present the NDCC algorithm for noisy labeled data instances detection and counterfactual correction.
 
+## Citation
+To cite our paper, please use the following reference:
+
+Wenting Qi and Charalampos Chelmis. "Noisy Label Detection and Counterfactual Correction." IEEE Transactions on Artificial Intelligence (2023). doi: 10.1109/TAI.2023.3271963.
+
+BibTeX:
+``` 
+@ARTICLE{qi2023noisy,
+  author={Qi, Wenting and Chelmis, Charalampos},
+  journal={IEEE Transactions on Artificial Intelligence}, 
+  title={Noisy Label Detection and Counterfactual Correction}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-13},
+  doi={10.1109/TAI.2023.3271963}}
+
+```
 
 ### Prerequisites
 Python 3.6 or above and the following libraries
